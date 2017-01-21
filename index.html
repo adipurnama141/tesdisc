@@ -1,0 +1,412 @@
+<html>
+<head>
+<script>
+
+
+
+</script>
+
+
+
+<style>
+.wrap {
+	width : 100%;
+	height: 100%;
+}
+
+.option{
+	width: 100%;
+	font-family: helvetica;
+    text-align: center;
+    font-size: 70px;
+    border: 2px solid;
+    padding: 98px 0px ;
+    margin: 34px 0px;
+}
+
+h2 {
+	text-align: center;
+	font-size:80px;
+	padding : 20px;
+}
+
+h3 {
+	text-align: center;
+	font-size:70px;
+	padding : 20px;
+}
+
+table {
+	width: 100%;
+    font-size: 81px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+
+</style>
+
+
+
+
+</head>
+
+<body>
+
+<div class="wrap">
+	<div id="questionForm">
+		<h2 id="num"> 1 / 40 </h2>
+		<h3 > Pilih kata yang paling sesuai dengan Anda </h2>
+
+		<div class="option" id="d">Membujuk</div>
+		<div class="option" id="i">Penuh Humor </div>
+		<div class="option" id="s">Dapat Menyesuaikan Diri</div>
+		<div class="option" id="c">Teliti</div>
+	</div>
+
+	<table id="result" style="display:none"> 
+	<tr>
+		<td colspan="4">Total</td>
+	</tr>
+	<tr>
+		<td>D</td>
+		<td>I</td>
+		<td>S</td>
+		<td>C</td>
+	</tr>
+
+	<tr>
+		<td id="dt"></td>
+		<td id="it"></td>
+		<td id="st"></td>
+		<td id="ct"></td>
+	</tr>
+
+	<tr>
+		<td colspan="4">Kekuatan</td>
+	</tr>
+	<tr>
+		<td>D</td>
+		<td>I</td>
+		<td>S</td>
+		<td>C</td>
+	</tr>
+	<tr>
+		<td id="dp"></td>
+		<td id="ip"></td>
+		<td id="sp"></td>
+		<td id="cp"></td>
+	</tr>
+	<tr>
+		<td colspan="4">Kelemahan</td>
+	</tr>
+	<tr>
+		<td>D</td>
+		<td>I</td>
+		<td>S</td>
+		<td>C</td>
+	</tr>
+	<tr>
+		<td id="dn"></td>
+		<td id="in"></td>
+		<td id="sn"></td>
+		<td id="cn"></td>
+
+	</tr>
+
+</div>
+
+
+<script>
+
+
+
+var dQ = ["	Petualang	",
+"	Membujuk	",
+"	Berkeinginan besar	",
+"	Bersaing	",
+"	Sumber tenaga besar	",
+"	Percaya diri	",
+"	Tentu/Pasti	",
+"	Yakin	",
+"	Terus terang	",
+"	Selalu mendorong	",
+"	Berani	",
+"	Merasa yakin	",
+"	Dapat berdiri sendiri	",
+"	Dapat memutuskan	",
+"	Cepat/giat bertindak	",
+"	Keras hati	",
+"	Pembimbing	",
+"	Kepala	",
+"	Produktif	",
+"	Berani	",
+"	Sok pemimpin	",
+"	Tidak simpatik	",
+"	Penentang	",
+"	Terus terang	",
+"	Tidak sabar	",
+"	Tidak ada rasa kasihan	",
+"	Keras kepala	",
+"	Bangga	",
+"	Berdebat	",
+"	Gugup	",
+"	Pekerja keras	",
+"	Tidak bijaksana	",
+"	Menonjolkan diri	",
+"	Tidak ada toleransi	",
+"	Bertindak curang	",
+"	Keras kepala	",
+"	Memerintah yang lain	",
+"	Pemarah	",
+"	Tergesa-gesa	",
+"	Penuh tipu daya	"
+]
+
+
+var iQ = [
+"	Bersemangat	",
+"	Penuh humor	",
+"	Pandai membawa diri	",
+"	Meyakinkan	",
+"	Menyegarkan	",
+"	Bersemangat	",
+"	Tukang promosi	",
+"	Spontan	",
+"	Optimis	",
+"	Penuh senda gurau	",
+"	Percaya / Setia	",
+"	Riang	",
+"	Memberi ilham	",
+"	Tukang pamer	",
+"	Mudah bergaul	",
+"	Pandai bicara	",
+"	Periang	",
+"	Tangkas	",
+"	Terkenal	",
+"	Pemantul/gong	",
+"	Kurang ajar	",
+"	Tidak disiplin	",
+"	Mengulang-ulang	",
+"	Pelupa	",
+"	Suka menghalangi	",
+"	Tidak terduga	",
+"	Tanpa rencana	",
+"	Menerima	",
+"	Cepat marah	",
+"	Sederhana 	",
+"	Ingin pujian	",
+"	Senang bicara	",
+"	Tidak teratur 	",
+"	Tidak tetap	",
+"	Tidak rapi	",
+"	Angkuh / sombong	",
+"	Bersuara keras	",
+"	Susah konsentrasi	",
+"	Gelisah	",
+"	Dapat berubah	"
+]
+
+var sQ = [
+"	Dapat menyesualkan diri	",
+"	Suka damai	",
+"	Tunduk/takluk	",
+"	Terkendali	",
+"	Mencadangkan	",
+"	Memuaskan	",
+"	Sabar	",
+"	Pemalu	",
+"	Hormat	",
+"	Ramah tamah	",
+"	Diplomatis	",
+"	Konsisten	",
+"	Tidak menyerang	",
+"	Sedikit gurau	",
+"	Perantara	",
+"	Bersikap toleran	",
+"	Pendengar	",
+"	Merasa puas	",
+"	Menyenangkan	",
+"	Berimbang	",
+"	Tanpa ekspresi	",
+"	Tidak berminat	",
+"	Pendiam 	",
+"	Takut	",
+"	Tidak tegas	",
+"	Tidak terlibat	",
+"	Bimbang	",
+"	Berkeluh kesah	",
+"	Tanpa tujuan	",
+"	Masa bodo	",
+"	Kuatir	",
+"	Malu/sehan	",
+"	Ragu-ragu	",
+"	Tidak peduli	",
+"	Gerutu	",
+"	Lambat	",
+"	Malas	",
+"	Lamban	",
+"	Enggan	",
+"	Berkompromi	"
+]
+
+var cQ = [
+"	Teliti	",
+"	Keras hati	",
+"	Mengorbankan diri	",
+"	Mempertimbangkan	",
+"	Menghargai	",
+"	Perasa	",
+"	Perencana	",
+"	Terjadwal	",
+"	Sesuai perintah	",
+"	Setia	",
+"	Terperinci	",
+"	Beradab	",
+"	Ideal	",
+"	Pendiam	",
+"	Gemar musik	",
+"	Senang berpikir	",
+"	Setia	",
+"	Perencana	",
+"	Sempurna	",
+"	Disiplin	",
+"	Pemalu 	",
+"	Tidak mau memberi maaf	",
+"	Pemarah	",
+"	Kacau	",
+"	Rasa tidak aman	",
+"	Tidak terkenal	",
+"	Sulit mengikhlaskan	",
+"	Pesimis	",
+"	Tidak cocok	",
+"	Selalu bersikap negatif	",
+"	Menarik diri	",
+"	Terlalu peka	",
+"	Pemurung	",
+"	Tertutup	",
+"	Murung	",
+"	Masa bodoh	",
+"	Penyendiri	",
+"	Curiga	",
+"	Suka membalas dendam	",
+"	Kritis	"
+]
+
+var questionNumber = 0;
+var DISC = [0,0,0,0];
+var negativeDISC = [0,0,0,0];
+
+
+var d = document.getElementById('d');
+var i = document.getElementById('i');
+var s = document.getElementById('s');
+var c = document.getElementById('c');
+var qNumber = document.getElementById('num');
+
+function getElement(name){
+	return document.getElementById(name);
+}
+
+function refreshQuestions(){
+	d.innerHTML = dQ[questionNumber];
+	i.innerHTML = iQ[questionNumber];
+	s.innerHTML = sQ[questionNumber];
+	c.innerHTML = cQ[questionNumber];
+}
+
+
+function generateResult(){
+	getElement('dt').innerHTML = DISC[0];
+	getElement('it').innerHTML = DISC[1];
+	getElement('st').innerHTML = DISC[2];
+	getElement('ct').innerHTML = DISC[3];
+	getElement('dn').innerHTML = negativeDISC[0];
+	getElement('in').innerHTML = negativeDISC[1];
+	getElement('sn').innerHTML = negativeDISC[2];
+	getElement('cn').innerHTML = negativeDISC[3];
+	getElement('dp').innerHTML = DISC[0] - negativeDISC[0];
+	getElement('ip').innerHTML = DISC[1] - negativeDISC[1];
+	getElement('sp').innerHTML = DISC[2] -negativeDISC[2];
+	getElement('cp').innerHTML = DISC[3] - negativeDISC[3];
+
+
+}
+
+
+function nextQuestion() {
+	questionNumber++;
+	refreshQuestions();
+	if(questionNumber == 40) {
+		getElement('questionForm').style.display= 'none';
+		getElement('result').style.display = 'table';
+		generateResult();
+	}
+
+}
+
+function refreshQuestionNumber(){
+	qNumber.innerHTML = (questionNumber + 1) + " / 40";
+
+}
+
+
+d.onclick = function() {	
+	DISC[0]++;
+	if(questionNumber >= 20) {
+		negativeDISC[0]++;
+	}
+	console.log("D :" + DISC[0]);
+	console.log("nD : " + negativeDISC[0]);
+	console.log("pD : " + (DISC[0] - negativeDISC[0]));
+	nextQuestion();
+	refreshQuestionNumber();
+}
+
+i.onclick = function() {	
+	DISC[1]++;
+	if(questionNumber >= 20) {
+		negativeDISC[1]++;
+	}
+	nextQuestion();
+	refreshQuestionNumber();
+}
+
+s.onclick = function() {	
+	DISC[2]++;
+	if(questionNumber >= 20) {
+		negativeDISC[2]++;
+	}
+	nextQuestion();
+	refreshQuestionNumber();
+}
+
+c.onclick = function() {	
+	DISC[3]++;
+	if(questionNumber >= 20) {
+		negativeDISC[3]++;
+	}
+	nextQuestion();
+	refreshQuestionNumber();
+}
+
+
+
+
+
+
+
+
+
+refreshQuestions();
+
+
+
+
+</script>
+
+
+</body>
+
+
+</html>

@@ -4,18 +4,18 @@ Bantul,Yogyakarta
 
 Dahulu ayah bekerja sebagai kondektur bus, beliau sudah bekerja selama kurang lebih 25 tahun. Namun, karena beliau semakin menua dan tubuhnya tidak sekuat dahulu, ayah memutuskan untuk berhenti menjadi kondektur bus. Saat ini ayah bekerja di rumah membuka warung kelontong dan juga menjual BBM eceran karena tempat tinggal kami berada di dekat jalan raya. 
 Ibu saya bernama Sarjinem. Saya tidak begitu mengenal ibu karena beliau meninggal dunia ketika saya masih berusia 5 tahun.
-- 
+
 ingin megembangkan macam softskill saya pribadi
 berbagi bermacam-macam ilmu dan pengalaman yang saya miliki kepada adik-adik 
 melatih memanajemen orang banyak karena hal itu merupakan syarat mutlak seorang pemimpin
 melatih memanajemen waktu karena saya ingin mengisi waktu saya dengan hal-hal yang produktif bagi saya pribadi dan 
 bermanfaat untuk orang lain, mencari keluarga baru bersama tutor yang lain dan calon mahasiswa ITB bidikmisi 2017
 meringankan beban orang tua saya.
--
+
 cenderung sering menyia-nyiakan waktu apabila saya memiliki waktu luang
--
+
 Kelebihan saya adalah saya menyukai belajar
--
+
 saya ingin mengaplikasikan ilmu yang saya dapat di Resimen Mahasiswa yaitu sigap, tepat waktu, dan disiplin di lingkungan asrama.
 Saya ingin mencoba lebih mendisiplinkan diri saya  dan orang-orang disekitar saya agar mereka lebih taat kepada aturan, karena patuh kepada pemimpin wajib hukumnya selama tidak dalam kemaksiatan. 
 
@@ -24,11 +24,11 @@ I-2.78-FITB-KP
 Medan
 
 Ayah saya sehari – hari bekerja sebagai wiraswasta ( pedagang ) berjualan kepala gas dari rumah ke rumah . Sementara ibu saya merupakan ibu rumah tangga.
--
+
 Saya ingin menjadi bagian dari usaha pemerintah untuk menyejahterakan rakyat dan membimbing setiap insan yang ingin belajar ke arah yang lebih baik 
--
+
 Kekurangan saya yang terutama ialah masih menjadi “ Yes Man “ . Dan kurang pertimbangan , malas yang terkadang muncul dan masih banyak lagi 
--
+
 Tetapi dengan sikap saya yang semangat dan pantang menyerah , saya ingin menyemangati adik – adik di segala penjuru untuk menjadi agen perubahan bangsa . Setidaknya kita harus mengalahkan diri kita sendiri , agar dapat menuju ke dunia yang lebih luas . Saya ingin membuat Asrama menjadi lebih baik , dalam segi kenyamanan dalam berkreasi dan berpendapat , berprestasi dan belajar dan masih banyak lagi.
 
 
@@ -36,7 +36,7 @@ Tetapi dengan sikap saya yang semangat dan pantang menyerah , saya ingin menyema
 
 ##DEDE NURHELIZA
 IC-FITB-KN
-+Staff Tutor Kedisiplinan
+Staff Tutor Kedisiplinan
 Ciamis
 
 
